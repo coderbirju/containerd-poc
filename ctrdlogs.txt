@@ -1,0 +1,236 @@
+INFO[2024-10-17T16:11:26.851454778Z] Connect containerd service                   
+INFO[2024-10-17T16:11:26.851487679Z] using legacy CRI server                      
+INFO[2024-10-17T16:11:26.851499399Z] using experimental NRI integration - disable nri plugin to prevent this 
+DEBU[2024-10-17T16:11:26.851537541Z] remote introspection plugin filters           filters="[type==io.containerd.snapshotter.v1, id==overlayfs]"
+INFO[2024-10-17T16:11:26.851660844Z] Get image filesystem path "/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs" 
+INFO[2024-10-17T16:11:26.852744743Z] Start subscribing containerd event           
+INFO[2024-10-17T16:11:26.852788035Z] Start recovering state                       
+INFO[2024-10-17T16:11:26.852866527Z] Start event monitor                          
+INFO[2024-10-17T16:11:26.852886067Z] Start snapshots syncer                       
+INFO[2024-10-17T16:11:26.852892267Z] serving...                                    address=/run/containerd/containerd.sock.ttrpc
+INFO[2024-10-17T16:11:26.852904988Z] Start cni network conf syncer for default    
+INFO[2024-10-17T16:11:26.853012351Z] serving...                                    address=/run/containerd/containerd.sock
+INFO[2024-10-17T16:11:26.853023581Z] Start streaming server                       
+DEBU[2024-10-17T16:11:26.853066232Z] sd notification                               notified=false state="READY=1"
+INFO[2024-10-17T16:11:26.853081313Z] containerd successfully booted in 0.078310s  
+DEBU[2024-10-17T16:11:40.288996890Z] (*service).Write started                      expected="sha256:de13e74e14b98eb96bdf886791ae47686c3c5d29f9d5f85ea55206843e3fce26" ref="index-sha256:de13e74e14b98eb96bdf886791ae47686c3c5d29f9d5f85ea55206843e3fce26" total=10245
+DEBU[2024-10-17T16:11:40.297434600Z] (*service).Write started                      expected="sha256:d58d11d7ef5d5cc3c95e71920331bd156061cef2ca06315d567244f83b41118a" ref="manifest-sha256:d58d11d7ef5d5cc3c95e71920331bd156061cef2ca06315d567244f83b41118a" total=2482
+DEBU[2024-10-17T16:11:40.305494750Z] (*service).Write started                      expected="sha256:e105cfd78d67706049c5da08643df41fae03b363f2c05c32285c6a88d9445b21" ref="config-sha256:e105cfd78d67706049c5da08643df41fae03b363f2c05c32285c6a88d9445b21" total=7919
+DEBU[2024-10-17T16:11:40.311014231Z] prepare snapshot                              key="extract-310675931-DzEa sha256:63ca1fbb43ae5034640e5e6cb3e083e05c290072c5366fcaa9d62435a4cced85" parent=
+DEBU[2024-10-17T16:11:40.312868711Z] stat snapshot                                 key="sha256:63ca1fbb43ae5034640e5e6cb3e083e05c290072c5366fcaa9d62435a4cced85"
+DEBU[2024-10-17T16:11:40.313321854Z] prepare snapshot                              key="extract-313199850-sysz sha256:d25320f188821d9d2f2c1451f83e577ed8f130c30982eefa2c85df01ab1df8fe" parent="sha256:63ca1fbb43ae5034640e5e6cb3e083e05c290072c5366fcaa9d62435a4cced85"
+DEBU[2024-10-17T16:11:40.315260047Z] stat snapshot                                 key="sha256:d25320f188821d9d2f2c1451f83e577ed8f130c30982eefa2c85df01ab1df8fe"
+DEBU[2024-10-17T16:11:40.315539114Z] prepare snapshot                              key="extract-315422791-dDbP sha256:33519b20f2266322b81f54a76dc892c809ac01641db645998e78d64da54429c9" parent="sha256:d25320f188821d9d2f2c1451f83e577ed8f130c30982eefa2c85df01ab1df8fe"
+DEBU[2024-10-17T16:11:40.317467697Z] stat snapshot                                 key="sha256:33519b20f2266322b81f54a76dc892c809ac01641db645998e78d64da54429c9"
+DEBU[2024-10-17T16:11:40.317738674Z] prepare snapshot                              key="extract-317608551-cE_B sha256:67e8ab2886e890261582d19e96474b11cd020009c71c8245bd222493e0d3912b" parent="sha256:33519b20f2266322b81f54a76dc892c809ac01641db645998e78d64da54429c9"
+DEBU[2024-10-17T16:11:40.319699238Z] stat snapshot                                 key="sha256:67e8ab2886e890261582d19e96474b11cd020009c71c8245bd222493e0d3912b"
+DEBU[2024-10-17T16:11:40.319983696Z] prepare snapshot                              key="extract-319870663-8Coe sha256:2577c35274f0cd3158866d22ed803024c32f7931fc03df1df12e730252e83b44" parent="sha256:67e8ab2886e890261582d19e96474b11cd020009c71c8245bd222493e0d3912b"
+DEBU[2024-10-17T16:11:40.321839016Z] stat snapshot                                 key="sha256:2577c35274f0cd3158866d22ed803024c32f7931fc03df1df12e730252e83b44"
+DEBU[2024-10-17T16:11:40.322125384Z] prepare snapshot                              key="extract-322011671-Nd4N sha256:4f211eb91f21d0c37c2570a80f41bf7f5903b665153740b50efc3c3d518bd757" parent="sha256:2577c35274f0cd3158866d22ed803024c32f7931fc03df1df12e730252e83b44"
+DEBU[2024-10-17T16:11:40.324089448Z] stat snapshot                                 key="sha256:4f211eb91f21d0c37c2570a80f41bf7f5903b665153740b50efc3c3d518bd757"
+DEBU[2024-10-17T16:11:40.324360505Z] prepare snapshot                              key="extract-324240132-MsF1 sha256:4df747cad1322fcea3703371d152d956e4178a6eee57976e336257e7459830c5" parent="sha256:4f211eb91f21d0c37c2570a80f41bf7f5903b665153740b50efc3c3d518bd757"
+DEBU[2024-10-17T16:11:40.326137964Z] stat snapshot                                 key="sha256:4df747cad1322fcea3703371d152d956e4178a6eee57976e336257e7459830c5"
+DEBU[2024-10-17T16:11:40.326395141Z] prepare snapshot                              key="extract-326276658-41Zz sha256:f44c56e4eaa592368eba6dc6940c4b24a98e2bccdbcaa903dfb544e18f7ed1c8" parent="sha256:4df747cad1322fcea3703371d152d956e4178a6eee57976e336257e7459830c5"
+DEBU[2024-10-17T16:11:40.328452157Z] stat snapshot                                 key="sha256:f44c56e4eaa592368eba6dc6940c4b24a98e2bccdbcaa903dfb544e18f7ed1c8"
+DEBU[2024-10-17T16:11:40.330763100Z] create image                                  name="docker.io/library/redis:alpine" target="sha256:de13e74e14b98eb96bdf886791ae47686c3c5d29f9d5f85ea55206843e3fce26"
+DEBU[2024-10-17T16:11:40.332950790Z] Received containerd event timestamp - 2024-10-17 16:11:40.332847417 +0000 UTC, namespace - "example", topic - "/images/update" 
+DEBU[2024-10-17T16:11:40.332999252Z] Ignoring events in namespace - "example"     
+DEBU[2024-10-17T16:11:40.339455158Z] prepare snapshot                              key=redis-server-snapshot parent="sha256:f44c56e4eaa592368eba6dc6940c4b24a98e2bccdbcaa903dfb544e18f7ed1c8"
+DEBU[2024-10-17T16:12:01.957605763Z] remove snapshot                               key=redis-server-snapshot
+DEBU[2024-10-17T16:12:28.744307433Z] remove snapshot                               key=redis-server-snapshot
+DEBU[2024-10-17T16:12:28.985193832Z] schedule snapshotter cleanup                  snapshotter=overlayfs
+DEBU[2024-10-17T16:12:28.987050043Z] removed snapshot                              key=example/31/redis-server-snapshot snapshotter=overlayfs
+DEBU[2024-10-17T16:12:36.719884119Z] (*service).Write started                      expected="sha256:de13e74e14b98eb96bdf886791ae47686c3c5d29f9d5f85ea55206843e3fce26" ref="index-sha256:de13e74e14b98eb96bdf886791ae47686c3c5d29f9d5f85ea55206843e3fce26" total=10245
+DEBU[2024-10-17T16:12:36.727661022Z] (*service).Write started                      expected="sha256:d58d11d7ef5d5cc3c95e71920331bd156061cef2ca06315d567244f83b41118a" ref="manifest-sha256:d58d11d7ef5d5cc3c95e71920331bd156061cef2ca06315d567244f83b41118a" total=2482
+DEBU[2024-10-17T16:12:36.734209911Z] (*service).Write started                      expected="sha256:e105cfd78d67706049c5da08643df41fae03b363f2c05c32285c6a88d9445b21" ref="config-sha256:e105cfd78d67706049c5da08643df41fae03b363f2c05c32285c6a88d9445b21" total=7919
+DEBU[2024-10-17T16:12:36.738734224Z] prepare snapshot                              key="extract-738531129-vYLP sha256:63ca1fbb43ae5034640e5e6cb3e083e05c290072c5366fcaa9d62435a4cced85" parent=
+DEBU[2024-10-17T16:12:36.740526543Z] stat snapshot                                 key="sha256:63ca1fbb43ae5034640e5e6cb3e083e05c290072c5366fcaa9d62435a4cced85"
+DEBU[2024-10-17T16:12:36.740844242Z] prepare snapshot                              key="extract-740721759-mRro sha256:d25320f188821d9d2f2c1451f83e577ed8f130c30982eefa2c85df01ab1df8fe" parent="sha256:63ca1fbb43ae5034640e5e6cb3e083e05c290072c5366fcaa9d62435a4cced85"
+DEBU[2024-10-17T16:12:36.742643161Z] stat snapshot                                 key="sha256:d25320f188821d9d2f2c1451f83e577ed8f130c30982eefa2c85df01ab1df8fe"
+DEBU[2024-10-17T16:12:36.742888388Z] prepare snapshot                              key="extract-742783845-0L8S sha256:33519b20f2266322b81f54a76dc892c809ac01641db645998e78d64da54429c9" parent="sha256:d25320f188821d9d2f2c1451f83e577ed8f130c30982eefa2c85df01ab1df8fe"
+DEBU[2024-10-17T16:12:36.744994995Z] stat snapshot                                 key="sha256:33519b20f2266322b81f54a76dc892c809ac01641db645998e78d64da54429c9"
+DEBU[2024-10-17T16:12:36.745293033Z] prepare snapshot                              key="extract-745166790-GpIY sha256:67e8ab2886e890261582d19e96474b11cd020009c71c8245bd222493e0d3912b" parent="sha256:33519b20f2266322b81f54a76dc892c809ac01641db645998e78d64da54429c9"
+DEBU[2024-10-17T16:12:36.747178175Z] stat snapshot                                 key="sha256:67e8ab2886e890261582d19e96474b11cd020009c71c8245bd222493e0d3912b"
+DEBU[2024-10-17T16:12:36.747447622Z] prepare snapshot                              key="extract-747330309-A9or sha256:2577c35274f0cd3158866d22ed803024c32f7931fc03df1df12e730252e83b44" parent="sha256:67e8ab2886e890261582d19e96474b11cd020009c71c8245bd222493e0d3912b"
+DEBU[2024-10-17T16:12:36.749339513Z] stat snapshot                                 key="sha256:2577c35274f0cd3158866d22ed803024c32f7931fc03df1df12e730252e83b44"
+DEBU[2024-10-17T16:12:36.749586700Z] prepare snapshot                              key="extract-749486887-XffV sha256:4f211eb91f21d0c37c2570a80f41bf7f5903b665153740b50efc3c3d518bd757" parent="sha256:2577c35274f0cd3158866d22ed803024c32f7931fc03df1df12e730252e83b44"
+DEBU[2024-10-17T16:12:36.751476091Z] stat snapshot                                 key="sha256:4f211eb91f21d0c37c2570a80f41bf7f5903b665153740b50efc3c3d518bd757"
+DEBU[2024-10-17T16:12:36.751727838Z] prepare snapshot                              key="extract-751637156-u6Qq sha256:4df747cad1322fcea3703371d152d956e4178a6eee57976e336257e7459830c5" parent="sha256:4f211eb91f21d0c37c2570a80f41bf7f5903b665153740b50efc3c3d518bd757"
+DEBU[2024-10-17T16:12:36.753585399Z] stat snapshot                                 key="sha256:4df747cad1322fcea3703371d152d956e4178a6eee57976e336257e7459830c5"
+DEBU[2024-10-17T16:12:36.753895377Z] prepare snapshot                              key="extract-753761223-iy34 sha256:f44c56e4eaa592368eba6dc6940c4b24a98e2bccdbcaa903dfb544e18f7ed1c8" parent="sha256:4df747cad1322fcea3703371d152d956e4178a6eee57976e336257e7459830c5"
+DEBU[2024-10-17T16:12:36.756033666Z] stat snapshot                                 key="sha256:f44c56e4eaa592368eba6dc6940c4b24a98e2bccdbcaa903dfb544e18f7ed1c8"
+DEBU[2024-10-17T16:12:36.758291507Z] create image                                  name="docker.io/library/redis:alpine" target="sha256:de13e74e14b98eb96bdf886791ae47686c3c5d29f9d5f85ea55206843e3fce26"
+DEBU[2024-10-17T16:12:36.760579030Z] Received containerd event timestamp - 2024-10-17 16:12:36.760511458 +0000 UTC, namespace - "example", topic - "/images/update" 
+DEBU[2024-10-17T16:12:36.760609041Z] Ignoring events in namespace - "example"     
+DEBU[2024-10-17T16:12:36.768563688Z] prepare snapshot                              key=redis-server-snapshot parent="sha256:f44c56e4eaa592368eba6dc6940c4b24a98e2bccdbcaa903dfb544e18f7ed1c8"
+DEBU[2024-10-17T16:12:36.779731244Z] get snapshot mounts                           key=redis-server-snapshot
+DEBU[2024-10-17T16:12:58.373537303Z] remove snapshot                               key=redis-server-snapshot
+DEBU[2024-10-17T16:12:58.442729263Z] schedule snapshotter cleanup                  snapshotter=overlayfs
+DEBU[2024-10-17T16:12:58.444417519Z] removed snapshot                              key=example/32/redis-server-snapshot snapshotter=overlayfs
+DEBU[2024-10-17T16:13:03.927668620Z] (*service).Write started                      expected="sha256:de13e74e14b98eb96bdf886791ae47686c3c5d29f9d5f85ea55206843e3fce26" ref="index-sha256:de13e74e14b98eb96bdf886791ae47686c3c5d29f9d5f85ea55206843e3fce26" total=10245
+DEBU[2024-10-17T16:13:03.936948564Z] (*service).Write started                      expected="sha256:d58d11d7ef5d5cc3c95e71920331bd156061cef2ca06315d567244f83b41118a" ref="manifest-sha256:d58d11d7ef5d5cc3c95e71920331bd156061cef2ca06315d567244f83b41118a" total=2482
+DEBU[2024-10-17T16:13:03.945737494Z] (*service).Write started                      expected="sha256:e105cfd78d67706049c5da08643df41fae03b363f2c05c32285c6a88d9445b21" ref="config-sha256:e105cfd78d67706049c5da08643df41fae03b363f2c05c32285c6a88d9445b21" total=7919
+DEBU[2024-10-17T16:13:03.952138959Z] prepare snapshot                              key="extract-951915683-bMeC sha256:63ca1fbb43ae5034640e5e6cb3e083e05c290072c5366fcaa9d62435a4cced85" parent=
+DEBU[2024-10-17T16:13:03.954210066Z] stat snapshot                                 key="sha256:63ca1fbb43ae5034640e5e6cb3e083e05c290072c5366fcaa9d62435a4cced85"
+DEBU[2024-10-17T16:13:03.954555055Z] prepare snapshot                              key="extract-954441802-62Ta sha256:d25320f188821d9d2f2c1451f83e577ed8f130c30982eefa2c85df01ab1df8fe" parent="sha256:63ca1fbb43ae5034640e5e6cb3e083e05c290072c5366fcaa9d62435a4cced85"
+DEBU[2024-10-17T16:13:03.956632342Z] stat snapshot                                 key="sha256:d25320f188821d9d2f2c1451f83e577ed8f130c30982eefa2c85df01ab1df8fe"
+DEBU[2024-10-17T16:13:03.956980852Z] prepare snapshot                              key="extract-956828457-kemc sha256:33519b20f2266322b81f54a76dc892c809ac01641db645998e78d64da54429c9" parent="sha256:d25320f188821d9d2f2c1451f83e577ed8f130c30982eefa2c85df01ab1df8fe"
+DEBU[2024-10-17T16:13:03.959038308Z] stat snapshot                                 key="sha256:33519b20f2266322b81f54a76dc892c809ac01641db645998e78d64da54429c9"
+DEBU[2024-10-17T16:13:03.959321556Z] prepare snapshot                              key="extract-959211143-C39e sha256:67e8ab2886e890261582d19e96474b11cd020009c71c8245bd222493e0d3912b" parent="sha256:33519b20f2266322b81f54a76dc892c809ac01641db645998e78d64da54429c9"
+DEBU[2024-10-17T16:13:03.961187117Z] stat snapshot                                 key="sha256:67e8ab2886e890261582d19e96474b11cd020009c71c8245bd222493e0d3912b"
+DEBU[2024-10-17T16:13:03.961469755Z] prepare snapshot                              key="extract-961344211-5HpA sha256:2577c35274f0cd3158866d22ed803024c32f7931fc03df1df12e730252e83b44" parent="sha256:67e8ab2886e890261582d19e96474b11cd020009c71c8245bd222493e0d3912b"
+DEBU[2024-10-17T16:13:03.963431898Z] stat snapshot                                 key="sha256:2577c35274f0cd3158866d22ed803024c32f7931fc03df1df12e730252e83b44"
+DEBU[2024-10-17T16:13:03.963706946Z] prepare snapshot                              key="extract-963584142-sqxX sha256:4f211eb91f21d0c37c2570a80f41bf7f5903b665153740b50efc3c3d518bd757" parent="sha256:2577c35274f0cd3158866d22ed803024c32f7931fc03df1df12e730252e83b44"
+DEBU[2024-10-17T16:13:03.965440223Z] stat snapshot                                 key="sha256:4f211eb91f21d0c37c2570a80f41bf7f5903b665153740b50efc3c3d518bd757"
+DEBU[2024-10-17T16:13:03.966153663Z] prepare snapshot                              key="extract-965934806-Wzy8 sha256:4df747cad1322fcea3703371d152d956e4178a6eee57976e336257e7459830c5" parent="sha256:4f211eb91f21d0c37c2570a80f41bf7f5903b665153740b50efc3c3d518bd757"
+DEBU[2024-10-17T16:13:03.968217169Z] stat snapshot                                 key="sha256:4df747cad1322fcea3703371d152d956e4178a6eee57976e336257e7459830c5"
+DEBU[2024-10-17T16:13:03.968556598Z] prepare snapshot                              key="extract-968437155-uzQu sha256:f44c56e4eaa592368eba6dc6940c4b24a98e2bccdbcaa903dfb544e18f7ed1c8" parent="sha256:4df747cad1322fcea3703371d152d956e4178a6eee57976e336257e7459830c5"
+DEBU[2024-10-17T16:13:03.970894822Z] stat snapshot                                 key="sha256:f44c56e4eaa592368eba6dc6940c4b24a98e2bccdbcaa903dfb544e18f7ed1c8"
+DEBU[2024-10-17T16:13:03.973902874Z] create image                                  name="docker.io/library/redis:alpine" target="sha256:de13e74e14b98eb96bdf886791ae47686c3c5d29f9d5f85ea55206843e3fce26"
+DEBU[2024-10-17T16:13:03.976053733Z] Received containerd event timestamp - 2024-10-17 16:13:03.975997292 +0000 UTC, namespace - "example", topic - "/images/update" 
+DEBU[2024-10-17T16:13:03.976090384Z] Ignoring events in namespace - "example"     
+DEBU[2024-10-17T16:13:03.982742736Z] prepare snapshot                              key=redis-server-snapshot parent="sha256:f44c56e4eaa592368eba6dc6940c4b24a98e2bccdbcaa903dfb544e18f7ed1c8"
+DEBU[2024-10-17T16:13:03.990877919Z] get snapshot mounts                           key=redis-server-snapshot
+DEBU[2024-10-17T16:13:03.998270231Z] get snapshot mounts                           key=redis-server-snapshot
+DEBU[2024-10-17T16:13:04.004624774Z] shim bootstrap parameters                     address="unix:///run/containerd/s/b37f8c6a6e1a4efad392ac72213ddecef1b549f480ea98c82795f6f1bf783899" namespace=example protocol=ttrpc
+time="2024-10-17T16:13:04.007553204Z" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2024-10-17T16:13:04.007615205Z" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2024-10-17T16:13:04.007632046Z" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2024-10-17T16:13:04.007745359Z" level=debug msg="registering ttrpc service" id=io.containerd.ttrpc.v1.task
+time="2024-10-17T16:13:04.007763429Z" level=info msg="loading plugin \"io.containerd.ttrpc.v1.pause\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2024-10-17T16:13:04.007793370Z" level=debug msg="registering ttrpc service" id=io.containerd.ttrpc.v1.pause
+time="2024-10-17T16:13:04.007884703Z" level=debug msg="serving api on socket" socket="[inherited from parent]"
+time="2024-10-17T16:13:04.007904453Z" level=debug msg="starting signal loop" namespace=example path=/run/containerd/io.containerd.runtime.v2.task/example/redis-server pid=2949266 runtime=io.containerd.runc.v2
+INFO[2024-10-17T16:13:09.077705293Z] shim disconnected                             id=redis-server namespace=example
+WARN[2024-10-17T16:13:09.077792735Z] cleaning up after shim disconnected           id=redis-server namespace=example
+INFO[2024-10-17T16:13:09.077817916Z] cleaning up dead shim                         namespace=example
+WARN[2024-10-17T16:13:09.086341489Z] cleanup warnings time="2024-10-17T16:13:09Z" level=debug msg="starting signal loop" namespace=example pid=2949405 runtime=io.containerd.runc.v2  namespace=example
+DEBU[2024-10-17T16:13:10.088495030Z] get snapshot mounts                           key=redis-server-snapshot
+DEBU[2024-10-17T16:13:10.095360557Z] shim bootstrap parameters                     address="unix:///run/containerd/s/b37f8c6a6e1a4efad392ac72213ddecef1b549f480ea98c82795f6f1bf783899" namespace=example protocol=ttrpc
+time="2024-10-17T16:13:10.098033601Z" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2024-10-17T16:13:10.098100472Z" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2024-10-17T16:13:10.098117663Z" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2024-10-17T16:13:10.098244466Z" level=debug msg="registering ttrpc service" id=io.containerd.ttrpc.v1.task
+time="2024-10-17T16:13:10.098264177Z" level=info msg="loading plugin \"io.containerd.ttrpc.v1.pause\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2024-10-17T16:13:10.098277047Z" level=debug msg="registering ttrpc service" id=io.containerd.ttrpc.v1.pause
+time="2024-10-17T16:13:10.098367570Z" level=debug msg="serving api on socket" socket="[inherited from parent]"
+time="2024-10-17T16:13:10.098399271Z" level=debug msg="starting signal loop" namespace=example path=/run/containerd/io.containerd.runtime.v2.task/example/redis-server pid=2949448 runtime=io.containerd.runc.v2
+INFO[2024-10-17T16:13:15.150781995Z] shim disconnected                             id=redis-server namespace=example
+WARN[2024-10-17T16:13:15.150858028Z] cleaning up after shim disconnected           id=redis-server namespace=example
+INFO[2024-10-17T16:13:15.150877038Z] cleaning up dead shim                         namespace=example
+WARN[2024-10-17T16:13:15.160201372Z] cleanup warnings time="2024-10-17T16:13:15Z" level=debug msg="starting signal loop" namespace=example pid=2949579 runtime=io.containerd.runc.v2  namespace=example
+DEBU[2024-10-17T16:13:16.162420765Z] get snapshot mounts                           key=redis-server-snapshot
+DEBU[2024-10-17T16:13:16.168898672Z] shim bootstrap parameters                     address="unix:///run/containerd/s/b37f8c6a6e1a4efad392ac72213ddecef1b549f480ea98c82795f6f1bf783899" namespace=example protocol=ttrpc
+time="2024-10-17T16:13:16.171396330Z" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2024-10-17T16:13:16.171455122Z" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2024-10-17T16:13:16.171471652Z" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2024-10-17T16:13:16.171583025Z" level=debug msg="registering ttrpc service" id=io.containerd.ttrpc.v1.task
+time="2024-10-17T16:13:16.171602106Z" level=info msg="loading plugin \"io.containerd.ttrpc.v1.pause\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2024-10-17T16:13:16.171616736Z" level=debug msg="registering ttrpc service" id=io.containerd.ttrpc.v1.pause
+time="2024-10-17T16:13:16.171706138Z" level=debug msg="serving api on socket" socket="[inherited from parent]"
+time="2024-10-17T16:13:16.171737669Z" level=debug msg="starting signal loop" namespace=example path=/run/containerd/io.containerd.runtime.v2.task/example/redis-server pid=2949616 runtime=io.containerd.runc.v2
+INFO[2024-10-17T16:13:21.221120790Z] shim disconnected                             id=redis-server namespace=example
+WARN[2024-10-17T16:13:21.221180232Z] cleaning up after shim disconnected           id=redis-server namespace=example
+INFO[2024-10-17T16:13:21.221197432Z] cleaning up dead shim                         namespace=example
+WARN[2024-10-17T16:13:21.229229272Z] cleanup warnings time="2024-10-17T16:13:21Z" level=debug msg="starting signal loop" namespace=example pid=2949775 runtime=io.containerd.runc.v2  namespace=example
+DEBU[2024-10-17T16:13:22.231178978Z] get snapshot mounts                           key=redis-server-snapshot
+DEBU[2024-10-17T16:13:22.239033822Z] shim bootstrap parameters                     address="unix:///run/containerd/s/b37f8c6a6e1a4efad392ac72213ddecef1b549f480ea98c82795f6f1bf783899" namespace=example protocol=ttrpc
+time="2024-10-17T16:13:22.240670637Z" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2024-10-17T16:13:22.240736839Z" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2024-10-17T16:13:22.240748639Z" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2024-10-17T16:13:22.240858412Z" level=debug msg="registering ttrpc service" id=io.containerd.ttrpc.v1.task
+time="2024-10-17T16:13:22.240877313Z" level=info msg="loading plugin \"io.containerd.ttrpc.v1.pause\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2024-10-17T16:13:22.240900033Z" level=debug msg="registering ttrpc service" id=io.containerd.ttrpc.v1.pause
+time="2024-10-17T16:13:22.241019236Z" level=debug msg="serving api on socket" socket="[inherited from parent]"
+time="2024-10-17T16:13:22.241045267Z" level=debug msg="starting signal loop" namespace=example path=/run/containerd/io.containerd.runtime.v2.task/example/redis-server pid=2949810 runtime=io.containerd.runc.v2
+INFO[2024-10-17T16:13:27.288845115Z] shim disconnected                             id=redis-server namespace=example
+WARN[2024-10-17T16:13:27.288894546Z] cleaning up after shim disconnected           id=redis-server namespace=example
+INFO[2024-10-17T16:13:27.288914537Z] cleaning up dead shim                         namespace=example
+WARN[2024-10-17T16:13:27.296615178Z] cleanup warnings time="2024-10-17T16:13:27Z" level=debug msg="starting signal loop" namespace=example pid=2949959 runtime=io.containerd.runc.v2  namespace=example
+DEBU[2024-10-17T16:13:28.299088337Z] get snapshot mounts                           key=redis-server-snapshot
+DEBU[2024-10-17T16:13:28.305934124Z] shim bootstrap parameters                     address="unix:///run/containerd/s/b37f8c6a6e1a4efad392ac72213ddecef1b549f480ea98c82795f6f1bf783899" namespace=example protocol=ttrpc
+time="2024-10-17T16:13:28.308700339Z" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2024-10-17T16:13:28.308768851Z" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2024-10-17T16:13:28.308789362Z" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2024-10-17T16:13:28.308921945Z" level=debug msg="registering ttrpc service" id=io.containerd.ttrpc.v1.task
+time="2024-10-17T16:13:28.308948676Z" level=info msg="loading plugin \"io.containerd.ttrpc.v1.pause\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2024-10-17T16:13:28.308966356Z" level=debug msg="registering ttrpc service" id=io.containerd.ttrpc.v1.pause
+time="2024-10-17T16:13:28.309076490Z" level=debug msg="serving api on socket" socket="[inherited from parent]"
+time="2024-10-17T16:13:28.309113291Z" level=debug msg="starting signal loop" namespace=example path=/run/containerd/io.containerd.runtime.v2.task/example/redis-server pid=2949986 runtime=io.containerd.runc.v2
+INFO[2024-10-17T16:13:33.368439025Z] shim disconnected                             id=redis-server namespace=example
+WARN[2024-10-17T16:13:33.368524067Z] cleaning up after shim disconnected           id=redis-server namespace=example
+INFO[2024-10-17T16:13:33.368544358Z] cleaning up dead shim                         namespace=example
+WARN[2024-10-17T16:13:33.377003599Z] cleanup warnings time="2024-10-17T16:13:33Z" level=debug msg="starting signal loop" namespace=example pid=2950129 runtime=io.containerd.runc.v2  namespace=example
+DEBU[2024-10-17T16:13:34.379663325Z] get snapshot mounts                           key=redis-server-snapshot
+DEBU[2024-10-17T16:13:34.387658913Z] shim bootstrap parameters                     address="unix:///run/containerd/s/b37f8c6a6e1a4efad392ac72213ddecef1b549f480ea98c82795f6f1bf783899" namespace=example protocol=ttrpc
+time="2024-10-17T16:13:34.389700908Z" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2024-10-17T16:13:34.389760230Z" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2024-10-17T16:13:34.389771330Z" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2024-10-17T16:13:34.389890313Z" level=debug msg="registering ttrpc service" id=io.containerd.ttrpc.v1.task
+time="2024-10-17T16:13:34.389912534Z" level=info msg="loading plugin \"io.containerd.ttrpc.v1.pause\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2024-10-17T16:13:34.389935435Z" level=debug msg="registering ttrpc service" id=io.containerd.ttrpc.v1.pause
+time="2024-10-17T16:13:34.390053168Z" level=debug msg="serving api on socket" socket="[inherited from parent]"
+time="2024-10-17T16:13:34.390099229Z" level=debug msg="starting signal loop" namespace=example path=/run/containerd/io.containerd.runtime.v2.task/example/redis-server pid=2950168 runtime=io.containerd.runc.v2
+INFO[2024-10-17T16:13:39.446860333Z] shim disconnected                             id=redis-server namespace=example
+WARN[2024-10-17T16:13:39.446927164Z] cleaning up after shim disconnected           id=redis-server namespace=example
+INFO[2024-10-17T16:13:39.446949605Z] cleaning up dead shim                         namespace=example
+WARN[2024-10-17T16:13:39.454570824Z] cleanup warnings time="2024-10-17T16:13:39Z" level=debug msg="starting signal loop" namespace=example pid=2950303 runtime=io.containerd.runc.v2  namespace=example
+DEBU[2024-10-17T16:13:40.456710584Z] get snapshot mounts                           key=redis-server-snapshot
+DEBU[2024-10-17T16:13:40.462860882Z] shim bootstrap parameters                     address="unix:///run/containerd/s/b37f8c6a6e1a4efad392ac72213ddecef1b549f480ea98c82795f6f1bf783899" namespace=example protocol=ttrpc
+time="2024-10-17T16:13:40.465959896Z" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2024-10-17T16:13:40.466021358Z" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2024-10-17T16:13:40.466031968Z" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2024-10-17T16:13:40.466133521Z" level=debug msg="registering ttrpc service" id=io.containerd.ttrpc.v1.task
+time="2024-10-17T16:13:40.466150672Z" level=info msg="loading plugin \"io.containerd.ttrpc.v1.pause\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2024-10-17T16:13:40.466159632Z" level=debug msg="registering ttrpc service" id=io.containerd.ttrpc.v1.pause
+time="2024-10-17T16:13:40.466240094Z" level=debug msg="serving api on socket" socket="[inherited from parent]"
+time="2024-10-17T16:13:40.466260255Z" level=debug msg="starting signal loop" namespace=example path=/run/containerd/io.containerd.runtime.v2.task/example/redis-server pid=2950343 runtime=io.containerd.runc.v2
+INFO[2024-10-17T16:13:45.518574336Z] shim disconnected                             id=redis-server namespace=example
+WARN[2024-10-17T16:13:45.518632308Z] cleaning up after shim disconnected           id=redis-server namespace=example
+INFO[2024-10-17T16:13:45.518646938Z] cleaning up dead shim                         namespace=example
+WARN[2024-10-17T16:13:45.525943058Z] cleanup warnings time="2024-10-17T16:13:45Z" level=debug msg="starting signal loop" namespace=example pid=2950529 runtime=io.containerd.runc.v2  namespace=example
+DEBU[2024-10-17T16:13:46.527774530Z] get snapshot mounts                           key=redis-server-snapshot
+DEBU[2024-10-17T16:13:46.535774479Z] shim bootstrap parameters                     address="unix:///run/containerd/s/b37f8c6a6e1a4efad392ac72213ddecef1b549f480ea98c82795f6f1bf783899" namespace=example protocol=ttrpc
+time="2024-10-17T16:13:46.538502364Z" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2024-10-17T16:13:46.538618697Z" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2024-10-17T16:13:46.538642847Z" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2024-10-17T16:13:46.538749030Z" level=debug msg="registering ttrpc service" id=io.containerd.ttrpc.v1.task
+time="2024-10-17T16:13:46.538766901Z" level=info msg="loading plugin \"io.containerd.ttrpc.v1.pause\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2024-10-17T16:13:46.538792131Z" level=debug msg="registering ttrpc service" id=io.containerd.ttrpc.v1.pause
+time="2024-10-17T16:13:46.538871574Z" level=debug msg="serving api on socket" socket="[inherited from parent]"
+time="2024-10-17T16:13:46.538887034Z" level=debug msg="starting signal loop" namespace=example path=/run/containerd/io.containerd.runtime.v2.task/example/redis-server pid=2950556 runtime=io.containerd.runc.v2
+INFO[2024-10-17T16:13:51.607059719Z] shim disconnected                             id=redis-server namespace=example
+WARN[2024-10-17T16:13:51.607119880Z] cleaning up after shim disconnected           id=redis-server namespace=example
+INFO[2024-10-17T16:13:51.607135621Z] cleaning up dead shim                         namespace=example
+WARN[2024-10-17T16:13:51.614750259Z] cleanup warnings time="2024-10-17T16:13:51Z" level=debug msg="starting signal loop" namespace=example pid=2950910 runtime=io.containerd.runc.v2  namespace=example
+DEBU[2024-10-17T16:13:52.616555961Z] get snapshot mounts                           key=redis-server-snapshot
+DEBU[2024-10-17T16:13:52.623781269Z] shim bootstrap parameters                     address="unix:///run/containerd/s/b37f8c6a6e1a4efad392ac72213ddecef1b549f480ea98c82795f6f1bf783899" namespace=example protocol=ttrpc
+time="2024-10-17T16:13:52.625976389Z" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2024-10-17T16:13:52.626030000Z" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2024-10-17T16:13:52.626046101Z" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2024-10-17T16:13:52.626152354Z" level=debug msg="registering ttrpc service" id=io.containerd.ttrpc.v1.task
+time="2024-10-17T16:13:52.626169244Z" level=info msg="loading plugin \"io.containerd.ttrpc.v1.pause\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2024-10-17T16:13:52.626182224Z" level=debug msg="registering ttrpc service" id=io.containerd.ttrpc.v1.pause
+time="2024-10-17T16:13:52.626259126Z" level=debug msg="serving api on socket" socket="[inherited from parent]"
+time="2024-10-17T16:13:52.626297338Z" level=debug msg="starting signal loop" namespace=example path=/run/containerd/io.containerd.runtime.v2.task/example/redis-server pid=2950938 runtime=io.containerd.runc.v2
+INFO[2024-10-17T16:13:57.681115457Z] shim disconnected                             id=redis-server namespace=example
+WARN[2024-10-17T16:13:57.681187169Z] cleaning up after shim disconnected           id=redis-server namespace=example
+INFO[2024-10-17T16:13:57.681206929Z] cleaning up dead shim                         namespace=example
+WARN[2024-10-17T16:13:57.689664511Z] cleanup warnings time="2024-10-17T16:13:57Z" level=debug msg="starting signal loop" namespace=example pid=2951072 runtime=io.containerd.runc.v2  namespace=example
+DEBU[2024-10-17T16:13:58.691893363Z] get snapshot mounts                           key=redis-server-snapshot
+DEBU[2024-10-17T16:13:58.698712379Z] shim bootstrap parameters                     address="unix:///run/containerd/s/b37f8c6a6e1a4efad392ac72213ddecef1b549f480ea98c82795f6f1bf783899" namespace=example protocol=ttrpc
+time="2024-10-17T16:13:58.701365072Z" level=info msg="loading plugin \"io.containerd.event.v1.publisher\"..." runtime=io.containerd.runc.v2 type=io.containerd.event.v1
+time="2024-10-17T16:13:58.701748012Z" level=info msg="loading plugin \"io.containerd.internal.v1.shutdown\"..." runtime=io.containerd.runc.v2 type=io.containerd.internal.v1
+time="2024-10-17T16:13:58.701768133Z" level=info msg="loading plugin \"io.containerd.ttrpc.v1.task\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2024-10-17T16:13:58.701890756Z" level=debug msg="registering ttrpc service" id=io.containerd.ttrpc.v1.task
+time="2024-10-17T16:13:58.701907447Z" level=info msg="loading plugin \"io.containerd.ttrpc.v1.pause\"..." runtime=io.containerd.runc.v2 type=io.containerd.ttrpc.v1
+time="2024-10-17T16:13:58.701919837Z" level=debug msg="registering ttrpc service" id=io.containerd.ttrpc.v1.pause
+time="2024-10-17T16:13:58.701994499Z" level=debug msg="serving api on socket" socket="[inherited from parent]"
+time="2024-10-17T16:13:58.702016009Z" level=debug msg="starting signal loop" namespace=example path=/run/containerd/io.containerd.runtime.v2.task/example/redis-server pid=2951099 runtime=io.containerd.runc.v2
+INFO[2024-10-17T16:14:03.760533751Z] shim disconnected                             id=redis-server namespace=example
+WARN[2024-10-17T16:14:03.760608833Z] cleaning up after shim disconnected           id=redis-server namespace=example
+INFO[2024-10-17T16:14:03.760631884Z] cleaning up dead shim                         namespace=example
+WARN[2024-10-17T16:14:03.769020562Z] cleanup warnings time="2024-10-17T16:14:03Z" level=debug msg="starting signal loop" namespace=example pid=2951288 runtime=io.containerd.runc.v2  namespace=example
+DEBU[2024-10-17T16:14:14.774405218Z] remove snapshot                               key=redis-server-snapshot
+DEBU[2024-10-17T16:14:15.020258163Z] schedule snapshotter cleanup                  snapshotter=overlayfs
+DEBU[2024-10-17T16:14:15.021872137Z] removed snapshot                              key=example/33/redis-server-snapshot snapshotter=overlayfs
